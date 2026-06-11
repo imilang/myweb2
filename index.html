@@ -1,0 +1,68 @@
+<html lang="ko"><head>
+  <meta charset="UTF-8">
+  <title>모바일 반응형 웹 - 시(詩) 예제</title>
+  <!-- 모바일 반응형을 위한 viewport 설정 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: '맑은 고딕', sans-serif;
+      background: #211444;
+    }
+    .poem-container {
+      max-width: 300px;
+      margin: 40px auto;
+      background: linear-gradient(135deg, #ffe4f2 0%, #493a9b 100%);
+      border-radius: 20px;
+      padding: 50px 20px;
+      box-shadow: 0 4px 24px rgba(255, 255, 255, 0.367);
+      color: #000000;
+      text-align: center;
+      transition: background 0.3s;
+    }
+    .poem-title {
+      font-size: 1.7rem;
+      font-weight: bold;
+      margin-bottom: 24px;
+      color: #001d4f;
+      letter-spacing: 0.05em;
+    }
+    .poem-author {
+      margin-top: 24px;
+      font-size: 1.1rem;
+      color: #000000;
+      font-style: italic;
+    }
+    @media (max-width: 480px) {
+      .poem-container {
+        padding: 20px 8px;
+        font-size: 1.04rem;
+      }
+      .poem-title {
+        font-size: 1.22rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="poem-container">
+    <div class="poem-title">서시</div>
+    <div>
+      <p>
+        죽는 날까지 하늘을 우러러<br>
+        한 점 부끄럼이 없기를,<br>
+        잎새에 이는 바람에도<br>
+        나는 괴로워했다.<br>
+        별을 노래하는 마음으로<br>
+        모든 죽어가는 것을 사랑해야지<br>
+        그리고 나에게 주어진 길을<br>
+        걸어가야겠다.<br>
+        오늘 밤에도 별이 바람에 스치운다.
+      </p>
+    </div>
+    <div class="poem-author">- 윤동주</div>
+  </div>
+
+
+</body></html>
