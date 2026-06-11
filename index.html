@@ -3,39 +3,58 @@
   <title>모바일 반응형 웹 - 시(詩) 예제</title>
   <!-- 모바일 반응형을 위한 viewport 설정 -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
+  <style type="text/css" media="screen, print">
+   @font-face {
+    font-family: 'DungGeunMo.woff';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+    }              
+    *{ font-family: "DungGeunMo.woff", sans-serif }
     body {
       margin: 0;
       padding: 0;
       font-family: '맑은 고딕', sans-serif;
-      background: #211444;
+      background: #04103a;
+      background-image: url('https://img.magnific.com/premium-photo/sky-full-stars-backgrounds-outdoors-nature_53876-179348.jpg?semt=ais_hybrid&w=740&q=80');
+      background-repeat: no-repeat;
+      background-size: 100%;
     }
     .poem-container {
       max-width: 300px;
-      margin: 40px auto;
-      background: linear-gradient(135deg, #ffe4f2 0%, #493a9b 100%);
+      margin: 80px auto;
+      background-color: white;
       border-radius: 20px;
-      padding: 50px 100px;
-      box-shadow: 0 4px 24px rgba(255, 255, 255, 0.367);
+      padding: 0px 50px 50px 50px;
+      box-shadow: 0 4px 24px rgba(143, 143, 143, 0.367);
       color: #000000;
       text-align: center;
       line-height: 40px;
       transition: background 0.3s;
     }
+    .title {
+        background-color: #04103a ;
+        font-size: 1.55rem;
+        color: white;
+        padding: 0.6rem 1.5rem;
+        margin-left: -50px;
+        margin-right: -50px;
+        border-radius: 20px 20px 0 0;
+    }
     .poem-title {
-      font-size: 1.7rem;
-      font-weight: bold;
-      margin-top: 10px;
-      color: #001d4f;
-      letter-spacing: 0.05em;
+        font-size: 1.7rem;
+        font-weight: bold;
+        margin-top: 40px;
+        color: #001d4f;
+        letter-spacing: 0.05em;
     }
     .poem-author {
         text-align: right;
         padding-right: 30px;
-      margin-top: 10px;
-      font-size: 1.1rem;
-      color: #000000;
-      font-style: italic;
+        margin-top: 10px;
+        font-size: 1.1rem;
+        color: #000000;
+        font-style: italic;
     }
     @media (max-width: 480px) {
       .poem-container {
@@ -45,11 +64,19 @@
       .poem-title {
         font-size: 1.22rem;
       }
+
+      .title {
+        margin-left: -8px;
+        margin-right: -8px;
+        margin-top: -20px;
+        font-size: 1.04rem;
+        }
     }
   </style>
 </head>
 <body>
   <div class="poem-container">
+    <div class = "title">-`♥´- 내가 좋아하는 시-`♥´- </div>
     <div class="poem-title">서시</div>
     <div class="poem-author">- 윤동주</div>
     <div>
@@ -66,6 +93,3 @@
       </p>
     </div>
   </div>
-
-
-</body></html>
